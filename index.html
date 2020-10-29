@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="budget-app">
+            <div class="app-title">My budget</div>
+            <div class="budget-header">
+                <div class="balance">
+                    <div class="balance-word">Balance</div>
+                    <div class="balance-value">$0</div>
+                </div>
+    
+                <div class="account">
+                    <div class="income-main">
+                        <div class="income-word">Income</div>
+                        <div class="income-total">$0</div>
+                    </div>
+
+                    <div class="outcome-main">
+                        <div class="outcome-word">Outcome</div>
+                        <div class="outcome-total">$0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="budget-secondPart">
+                             
+                <div class="toggle">
+                    <div class="tab1 active">Income</div>
+                    <div class="tab2">Expenses</div>
+                    <div class="tab3">All</div>
+                </div>
+    
+                <div class="tab-list" id="income">
+                    <ul class="list"></ul>
+                    
+                    <form class="input">
+                        <input type="text"  id="income-title-input" name="title" placeholder="Title">
+                        <input type="number"  id="income-amount-input" name="amount" placeholder="$0">
+                        <div class="add-income"></div>
+                    </form>
+                </div>
+    
+                <div class="hide tab-list" id="expense">
+                    <ul class="list"></ul>
+    
+                    <form class="input">
+                        <input type="text"  id="expense-title-input" name="title" placeholder="Title">
+                        <input type="number"  id="expense-amount-input" name="amount" placeholder="$0">
+                        <div class="add-expense"></div>
+                    </form>
+                </div>
+    
+                <div class="hide tab-list" id="all">
+                    <ul class="list"></ul>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>
